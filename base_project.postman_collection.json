@@ -1,0 +1,192 @@
+{
+	"id": "ba924445-20a5-0b6d-7021-9a029be8adc3",
+	"name": "base_project",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"id": "c412eae9-0fc8-2e15-2b14-0562d07e643c",
+			"name": "Auth",
+			"description": "",
+			"order": [
+				"a247ebbf-735b-8b20-6929-4dc4a028db2a"
+			],
+			"folders_order": [],
+			"owner": "3245362",
+			"collectionId": "ba924445-20a5-0b6d-7021-9a029be8adc3"
+		},
+		{
+			"id": "1653045c-fbc6-b2a2-4427-94333bbff814",
+			"name": "User",
+			"description": "",
+			"order": [
+				"8b4e359c-e002-3e94-3ca1-d97fa0f4f750",
+				"bca2ea1d-6f56-121a-a31b-87f46d518131",
+				"85776156-5b2e-caba-25c7-e011938c4d9c",
+				"c676ad24-6fd2-bf97-dbbc-395b5c4c510f"
+			],
+			"folders_order": [],
+			"owner": "3245362",
+			"collectionId": "ba924445-20a5-0b6d-7021-9a029be8adc3"
+		}
+	],
+	"folders_order": [
+		"c412eae9-0fc8-2e15-2b14-0562d07e643c",
+		"1653045c-fbc6-b2a2-4427-94333bbff814"
+	],
+	"timestamp": 1536622988480,
+	"owner": "3245362",
+	"public": false,
+	"requests": [
+		{
+			"id": "85776156-5b2e-caba-25c7-e011938c4d9c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/v1/user/restore_password/",
+			"folder": "1653045c-fbc6-b2a2-4427-94333bbff814",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536623624541,
+			"name": "Restore password",
+			"description": "",
+			"collectionId": "ba924445-20a5-0b6d-7021-9a029be8adc3",
+			"responses": [],
+			"rawModeData": "{\n\t\"email\":\"honaxasiso@poly-swarm.com\"\n}"
+		},
+		{
+			"id": "8b4e359c-e002-3e94-3ca1-d97fa0f4f750",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/v1/user/",
+			"folder": "1653045c-fbc6-b2a2-4427-94333bbff814",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536623622503,
+			"name": "Create user",
+			"description": "",
+			"collectionId": "ba924445-20a5-0b6d-7021-9a029be8adc3",
+			"responses": [],
+			"rawModeData": "{\n    \"email\": \"honaxasiso@poly-swarm.com\",\n    \"first_name\": \"Dieego\",\n    \"last_name\": \"Sosa\",\n    \"password\": \"admin123\"\n}"
+		},
+		{
+			"id": "a247ebbf-735b-8b20-6929-4dc4a028db2a",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/v1/login/",
+			"folder": "c412eae9-0fc8-2e15-2b14-0562d07e643c",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536623623887,
+			"name": "Login",
+			"description": "",
+			"collectionId": "ba924445-20a5-0b6d-7021-9a029be8adc3",
+			"responses": [],
+			"rawModeData": "    {\n        \"client_id\":\"EFu9gIemLtzu03WDOHxZJj1ENn1xTGsHqUWSsy7g\",\n        \"client_secret\":\"R8j6it2yS1PDrI8GibMXZlpM6FB2QypkW9ddgBdg0cFY2E3WQjv3ZtecSz3kkFugi6p1c9449vyw45c4k6uorjOOB4Xmp11CKG99ThEmbHFaLsPbtJpa5cLQJ4H9qkFY\",\n        \"grant_type\":\"password\",\n        \"username\": \"honaxasiso@poly-swarm.com\",\n        \"password\": \"admin321\"\n    }"
+		},
+		{
+			"id": "bca2ea1d-6f56-121a-a31b-87f46d518131",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/v1/user/verify_email/",
+			"folder": "1653045c-fbc6-b2a2-4427-94333bbff814",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536623623300,
+			"name": "Verify email user",
+			"description": "",
+			"collectionId": "ba924445-20a5-0b6d-7021-9a029be8adc3",
+			"responses": [],
+			"rawModeData": "{\n\t\"token\":\"V2Yr4fd8CTLtrwxIjQGFBiq4jm7Swt\"\n}"
+		},
+		{
+			"id": "c676ad24-6fd2-bf97-dbbc-395b5c4c510f",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/v1/user/new_password/",
+			"folder": "1653045c-fbc6-b2a2-4427-94333bbff814",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1536623625819,
+			"name": "New password",
+			"description": "",
+			"collectionId": "ba924445-20a5-0b6d-7021-9a029be8adc3",
+			"responses": [],
+			"rawModeData": "{\n\t\"password_1\":\"admin321\",\n\t\"password_2\":\"admin321\",\n\t\"token\":\"RYOQQ5WB8GyGb9dvdxXc8XJkgOtqLM\"\n}"
+		}
+	]
+}
