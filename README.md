@@ -14,7 +14,7 @@ Versión de Python: python3.6
 # base_project/base_project/settings.py
 
 # Agregar Client_id generado por Oauth2 Toolkit - /api/v1/applications/
-OAUTH2_CLIENT_ID = 'EFu9gIemLtzu03WDOHxZJj1ENn1xTGsHqUWSsy7g'
+OAUTH2_CLIENT_ID = ''
 ```
 
 #### Configuración de EMAIL_HOST
